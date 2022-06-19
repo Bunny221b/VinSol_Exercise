@@ -1,0 +1,55 @@
+.questions {
+  display: inline;
+}
+
+.questions__tab {
+  color: white;
+  padding: 10px;
+  background-color: #6d8b74;
+  border-radius: 1.3rem;
+  margin: 50px 22px 0px 22px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.questions__tab > h2 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+.score__div{
+  color: white;
+}
+
+.startAgain__div{
+  display: flex;
+  justify-content: center;
+}
+
+.startAgain__icon {
+  margin: 15px;
+  height: 50px;
+  width: 60%;
+  border-radius: 1.3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  font-size: 22px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.startAgain__icon:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  background-color: forestgreen;
+  color: white;
+  cursor: pointer;
+}
