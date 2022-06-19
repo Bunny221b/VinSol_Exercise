@@ -120,7 +120,7 @@ function Main() {
             {/* Start Button */}
 
             <button onClick={handleStartOne} className="main__btn">
-              Start
+              Start Quiz
             </button>
           </div>
         ) : (
@@ -218,7 +218,7 @@ function Main() {
             {/* Start Button */}
 
             <button onClick={handleStartTwo} className="main__btn">
-              Start
+              Start Quiz
             </button>
           </div>
         ) : (
