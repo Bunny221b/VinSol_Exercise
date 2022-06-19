@@ -1,0 +1,94 @@
+--- Documentation for Dual Quiz App ---
+
+Guide Steps: 
+
+1) When you load up the website, you can see the screen space devided in two parts.
+2) Each part contains a Mathematical Exercise.
+3) Before starting the Exercise user can select the No. of questions, Min and Max range of numbers and the Operator(s) to practice on a more customised quiz.
+4) If the user doesn't give any of the customized options mentioned in the above point, on pressing START QUIZ button the quiz will start with default values.
+5) The default values are -
+	(i) No. of questions : 20
+	(ii) Min and Max range of numbers : 1- 10 
+	(iii) Operators : ( + , - , * , / )
+6) On pressing the START QUIZ button , the respective exercise will start.
+7) The exercise will ask questions depending upon the parameters given randomly.
+8) A timer of 20 seconds will be provided in which the user have to provide the answer. Once the timer finishes, the screen will automatically move to the next question.
+9) During the course of the quiz, user can see their live SCORE at the bottom left.
+10) If at any point, user wants to reset the quiz and start again, they can press the RESET button on the bottom right.
+11) If user completes any question before the timer is finished, they can move to the next question by pressing the NEXT button.
+12) Once all the questions are completed, user can see all the questions , the answers provided by the user and the correct answers for the respective questions.
+13) The User can see their wrong answers marked in Red and correct answers marked in Green.
+14) The User can also see their final score at the results screen as well as the cumulative score of all the quizes running on the page.
+15) If the user wants to restart their quiz, they can press the START AGAIN button at the bottom of their respective quizes.
+
+Test Cases - 
+
+Test Case 1) 
+a) Entered the following Inputs : 
+		(i) No. of questions : 5
+		(ii) Min and Max range of numbers : 1- 15
+		(iii) Operators : +,-
+b) Results: 
+		(i) No. of questions received : 5
+		(ii) Min and Max range of numbers : 1- 15
+		(iii) Operators in the questions : +,-
+
+Test Case 2) 
+a) Entered the following Inputs : 
+		(i) No. of questions : 10
+		(ii) Min and Max range of numbers : 1- 5
+		(iii) Operators : +,*
+b) pressed Reset button at 5th question.
+c) Results: 
+		(i) No. of questions received : 5
+		(ii) Min and Max range of numbers : 1- 5
+		(iii) Operators in the questions : +,*
+		(iv) After pressing RESET button : back to Start quiz page.
+
+Test Case 3) 
+a) Entered the following Inputs : 
+		(i) No. of questions : 
+		(ii) Min and Max range of numbers : 
+		(iii) Operators : +
+b) Results: 
+		(i) No. of questions received : 20
+		(ii) Min and Max range of numbers : 1- 10
+		(iii) Operators in the questions : +
+
+Test Case 4) 
+a) Entered the following Inputs : 
+		(i) No. of questions : 
+		(ii) Min and Max range of numbers : 
+		(iii) Operators : +
+b) pressed START AGAIN at the end.
+b) Results: 
+		(i) No. of questions received : 20
+		(ii) Min and Max range of numbers : 1- 10
+		(iii) Operators in the questions : +
+		(iv) After pressing START AGAIN button : back to Start quiz page.
+
+Test Case 5) 
+a) Entered the following Inputs : 
+		(i) No. of questions : 
+		(ii) Min and Max range of numbers : 
+		(iii) Operators : +,-
+b) At 5th question, pressed START QUIZ button for the second quiz on the page with Inputs : 
+		(i) No. of questions : 3
+		(ii) Min and Max range of numbers : 1 - 5
+		(iii) Operators : *,/
+b) Results: 
+	1) Results for first quiz
+		(i) No. of questions received : 20
+		(ii) Min and Max range of numbers : 1- 10
+		(iii) Operators in the questions : +,-
+	2) Results for second quiz
+		(i) No. of questions received : 3
+		(ii) Min and Max range of numbers : 1- 5
+		(iii) Operators in the questions : *./
+	3) Got individual as well as cumulative scores for both the quizes.
+
+
+
+
+
+
