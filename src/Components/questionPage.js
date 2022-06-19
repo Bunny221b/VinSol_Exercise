@@ -25,6 +25,9 @@ function QuestionPage({ setScore, score, param, setExercise }) {
 
   useEffect(() => {
     callTimer();
+    if (noOfQues >= param.noOfQues) {
+      setIsEnd(true);
+    }
   }, [timer]);
 
   function callTimer() {
@@ -73,9 +76,6 @@ function QuestionPage({ setScore, score, param, setExercise }) {
   }
 
   function handleNext() {
-    if (noOfQues > param.noOfQues) {
-      setIsEnd(true);
-    }
     const correctAnswer = calculator(rand1, rand2, randOp);
     const obj = {
       question: Question,
@@ -109,7 +109,7 @@ function QuestionPage({ setScore, score, param, setExercise }) {
 
       {/* Questions Component */}
 
-      {!isEnd ? (
+      {noOfQues < param.noOfQues ? (
         <div>
           <div className="questionPage__div">
             <div className="questionPage">

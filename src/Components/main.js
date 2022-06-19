@@ -26,10 +26,12 @@ function Main() {
 
   // ---Functions--- //
 
-  function handleStartOne() {
+  function handleStartOne(e) {
+    e.preventDefault();
     setExerciseOne(1);
   }
-  function handleStartTwo() {
+  function handleStartTwo(e) {
+    e.preventDefault();
     setExerciseTwo(1);
   }
 
